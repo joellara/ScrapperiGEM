@@ -1,58 +1,522 @@
 [
-{"name": "BBa_J01010", "Type": "Regulated Prokaryotic", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J01080", "Type": "Regulated Prokaryotic", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J63003", "Type": "Yeast", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_K165002", "Type": "Yeast", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0072", "Type": "Constitutive Custom", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0029", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_K792001", "Type": "Yeast", "standards": ["RFC25", "RFC23", "RFC12", "RFC10"]},
-{"name": "BBa_B0073", "Type": "Constitutive Custom", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0030", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0074", "Type": "Constitutive Custom", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0031", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0032", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0033", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0034", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0035", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_B0064", "Type": "Constitutive Community Collection", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61100", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61101", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61102", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61103", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61104", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61105", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61106", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61107", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61108", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61109", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61110", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61111", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61112", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61113", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61114", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61115", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61116", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61117", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61118", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61119", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61120", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61121", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61122", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61123", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61124", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61125", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61126", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61127", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61128", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61129", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61130", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61131", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61132", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61133", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61134", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61135", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61136", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61137", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61138", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]},
-{"name": "BBa_J61139", "Type": "Constitutive Anderson Library", "standards": ["RFC25", "RFC12", "RFC23", "RFC21", "RFC10"]}
+    {
+        "name": "BBa_J01010",
+        "type": "RegulatedProkaryotic",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Riboregulator Lock 1"
+    },
+    {
+        "name": "BBa_J01080",
+        "type": "RegulatedProkaryotic",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Lock3"
+    },
+    {
+        "name": "BBa_J63003",
+        "type": "Yeast",
+        "chassis": "Eukaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "designed yeast Kozak sequence"
+    },
+    {
+        "name": "BBa_K165002",
+        "type": "Yeast",
+        "chassis": "Eukaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Kozak sequence (yeast RBS)"
+    },
+    {
+        "name": "BBa_K792001",
+        "type": "Yeast",
+        "chassis": "Eukaryotic",
+        "experience": "Works",
+        "standards": ["RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "Kozak sequence from yeast &#945;-factor mating pheromone (MF&#945;1)"
+    },
+    {
+        "name": "BBa_B0072",
+        "type": "ConstitutiveCustom",
+        "chassis": "Prokaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "orthogonal RBS",
+        "strength": "0.24"
+    },
+    {
+        "name": "BBa_B0029",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "1 bp deletion from B0031",
+        "strength": "0.764"
+    },
+    {
+        "name": "BBa_B0073",
+        "type": "ConstitutiveCustom",
+        "chassis": "Prokaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "Specialized RBS",
+        "strength": "1"
+    },
+    {
+        "name": "BBa_B0030",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "RBS.1 (strong) -- modified from R. Weiss",
+        "strength": "0.6"
+    },
+    {
+        "name": "BBa_B0074",
+        "type": "ConstitutiveCustom",
+        "chassis": "Prokaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "Orthogonal RBS",
+        "strength": "0.84"
+    },
+    {
+        "name": "BBa_B0031",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "RBS.2 (weak) -- derivative of BBa_0030",
+        "strength": "0.07"
+    },
+    {
+        "name": "BBa_B0032",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "RBS.3 (medium) -- derivative of BBa_0030",
+        "strength": "0.3 or 0.376"
+    },
+    {
+        "name": "BBa_B0033",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "RBS.4 (weaker) -- derivative of BBa_0030",
+        "strength": "0.01 or 0.002"
+    },
+    {
+        "name": "BBa_B0034",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "RBS (Elowitz 1999) -- defines RBS efficiency",
+        "strength": "1 or 1"
+    },
+    {
+        "name": "BBa_B0035",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "RBS (B0030 derivative)",
+        "strength": "1.124"
+    },
+    {
+        "name": "BBa_B0064",
+        "type": "ConstitutiveCommunityCollection",
+        "chassis": "Prokaryotic",
+        "experience": "None",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "Not in stock",
+        "description": "Tuned RBS for Q04401",
+        "strength": "0.35"
+    },
+    {
+        "name": "BBa_J61100",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member",
+        "strength": "0.047513"
+    },
+    {
+        "name": "BBa_J61101",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member",
+        "strength": "0.119831"
+    },
+    {
+        "name": "BBa_J61102",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61103",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61104",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61105",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61106",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61107",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member",
+        "strength": "0.065454"
+    },
+    {
+        "name": "BBa_J61108",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61109",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61110",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61111",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61112",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61113",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61114",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61115",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61116",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61117",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member",
+        "strength": "0.038518"
+    },
+    {
+        "name": "BBa_J61118",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61119",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61120",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61121",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61122",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "It's complicated",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61123",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61124",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61125",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61126",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61127",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "1",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member",
+        "strength": "0.087334"
+    },
+    {
+        "name": "BBa_J61128",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61129",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61130",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61131",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61132",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61133",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61134",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61135",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "It's complicated",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61136",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61137",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61138",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    },
+    {
+        "name": "BBa_J61139",
+        "type": "ConstitutiveAndersonLibrary",
+        "chassis": "Prokaryotic",
+        "experience": "Works",
+        "standards": ["RFC21", "RFC10", "RFC23", "RFC25", "RFC12"],
+        "status": "In stock",
+        "description": "Ribosome Binding Site Family Member"
+    }
 ]

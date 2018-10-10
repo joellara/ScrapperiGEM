@@ -4,17 +4,19 @@ import json
 from enum import Enum
 from helper import get_details
 
-    # Constitutive = 1
-    # InducibleEColi = 2
-    # InducibleBSubtilis = 3
-    # InducibleMiscProkaryote = 4
-    # InducibleYeast = 5
-    # InducibleMiscEukaryote = 6
-    # RepressibleEColi = 7
-    # RepressibleBSubtilis = 8
-    # RepressiblePhageT7 = 9
-    # RepressibleYeast = 10
-    # RepressibleMiscEukaryote = 11
+# Constitutive = 1
+# InducibleEColi = 2
+# InducibleBSubtilis = 3
+# InducibleMiscProkaryote = 4
+# InducibleYeast = 5
+# InducibleMiscEukaryote = 6
+# RepressibleEColi = 7
+# RepressibleBSubtilis = 8
+# RepressiblePhageT7 = 9
+# RepressibleYeast = 10
+# RepressibleMiscEukaryote = 11
+
+
 class Type(Enum):
     Constitutive = 1
     InducibleEColi = 2
@@ -27,6 +29,9 @@ class Type(Enum):
     RepressiblePhageT7 = 9
     RepressibleYeast = 10
     RepressibleMiscEukaryote = 11
+
+
+alreadyScrapped = []
 
 
 class PromoterSpider(scrapy.Spider):
@@ -45,7 +50,6 @@ class PromoterSpider(scrapy.Spider):
         yield scrapy.Request(url='http://parts.igem.org/Promoters/Catalog/Yeast/Repressible', callback=self.parse_repressible_yeast)
         yield scrapy.Request(url='http://parts.igem.org/Promoters/Catalog/Eukaryotic/Repressible', callback=self.parse_repressible_misceukaryote)
 
-
     def parse_webpage(self, response, type):
         tables = response.xpath('//table[@id="assembly_plasmid_table"]')
         num = 0
@@ -53,12 +57,19 @@ class PromoterSpider(scrapy.Spider):
             biobricks = table.xpath('tr')
             for bb in biobricks[1:]:
                 bb_res = dict()
-                bb_res['name'] = bb.xpath('td').xpath('a/text()').extract_first()
-                bb_res['desc'] = "".join(bb.xpath('td[@class="c_2"]/descendant-or-self ::*/text()').extract())
-                bb_res['status'] = bb.xpath('td[@class="c_8"]/text()').extract_first()
-                if bb_res['status'] != 'In stock':
+                bb_res['name'] = bb.xpath('td').xpath(
+                    'a/text()').extract_first()
+                if bb_res['name'] in alreadyScrapped:
                     continue
-                ### Specific webpage
+                bb_res['description'] = "".join(
+                    bb.xpath('td[@class="c_2"]/descendant-or-self ::*/text()').extract())
+                bb_res['length'] = "".join(
+                    bb.xpath('td[@class="c_6"]/descendant-or-self ::*/text()').extract())
+                bb_res['status'] = bb.xpath(
+                    'td[@class="c_8"]/text()').extract_first()
+                if bb_res['status'] != 'In stock':
+                    pass
+                # Specific webpage
                 if type == Type.Constitutive:
                     self.constitutive(bb_res, num)
                 elif type == Type.InducibleEColi:
@@ -84,57 +95,61 @@ class PromoterSpider(scrapy.Spider):
 
                 details = get_details(bb_res['name'])
                 bb_res['standards'] = details[0]
+                bb_res['experience'] = details[1]
+                if details[2]:
+                    bb_res['regulation'] = details[2]
+                alreadyScrapped.append(bb_res['name'])
                 yield bb_res
             num = num + 1
 
     def parse_constitutive(self, response):
-        return self.parse_webpage(response,Type.Constitutive)
+        return self.parse_webpage(response, Type.Constitutive)
 
     def parse_inducible_ecoli(self, response):
-        return self.parse_webpage(response,Type.InducibleEColi)
+        return self.parse_webpage(response, Type.InducibleEColi)
 
     def parse_inducible_bsubtilis(self, response):
-        return self.parse_webpage(response,Type.InducibleBSubtilis)
+        return self.parse_webpage(response, Type.InducibleBSubtilis)
 
     def parse_inducible_miscprokaryote(self, response):
-        return self.parse_webpage(response,Type.InducibleMiscProkaryote)
+        return self.parse_webpage(response, Type.InducibleMiscProkaryote)
 
     def parse_inducible_yeast(self, response):
-        return self.parse_webpage(response,Type.InducibleYeast)
+        return self.parse_webpage(response, Type.InducibleYeast)
 
     def parse_inducible_misceukaryote(self, response):
-        return self.parse_webpage(response,Type.InducibleMiscEukaryote)
+        return self.parse_webpage(response, Type.InducibleMiscEukaryote)
 
     def parse_repressible_ecoli(self, response):
-        return self.parse_webpage(response,Type.RepressibleEColi)
+        return self.parse_webpage(response, Type.RepressibleEColi)
 
     def parse_repressible_bsubtilis(self, response):
-        return self.parse_webpage(response,Type.RepressibleBSubtilis)
+        return self.parse_webpage(response, Type.RepressibleBSubtilis)
 
     def parse_repressible_phageT7(self, response):
-        return self.parse_webpage(response,Type.RepressiblePhageT7)
+        return self.parse_webpage(response, Type.RepressiblePhageT7)
 
     def parse_repressible_yeast(self, response):
-        return self.parse_webpage(response,Type.RepressibleYeast)
+        return self.parse_webpage(response, Type.RepressibleYeast)
 
     def parse_repressible_misceukaryote(self, response):
-        return self.parse_webpage(response,Type.RepressibleMiscEukaryote)
+        return self.parse_webpage(response, Type.RepressibleMiscEukaryote)
 
-    def constitutive(self,bb, num):
+    def constitutive(self, bb, num):
         if num < 3:
-            bb['chasis'] = 'E.coli'
+            bb['chassis'] = 'E.coli'
         elif num < 5:
-            bb['chasis'] = 'B. subtilis'
+            bb['chassis'] = 'B. subtilis'
         elif num < 6:
-            bb['chasis'] = 'Misc. prokaryotes'
+            bb['chassis'] = 'Misc. prokaryotes'
         elif num < 7:
-            bb['chasis'] = 'Bacteriophage T7'
+            bb['chassis'] = 'Bacteriophage T7'
         elif num < 8:
-            bb['chasis'] = 'Bacteriophage SP6'
+            bb['chassis'] = 'Bacteriophage SP6'
         elif num < 9:
-            bb['chasis'] = 'Yeast'
+            bb['chassis'] = 'Yeast'
         elif num < 10:
-            bb['chasis'] = 'Misc. Eukaryotes'
+            bb['chassis'] = 'Misc. Eukaryotes'
         bb['regulation'] = 'Constitutive'
         if num == 0:
             bb['sigma_factor'] = 'Sigma 70'
@@ -147,8 +162,8 @@ class PromoterSpider(scrapy.Spider):
         elif num == 4:
             bb['sigma_factor'] = 'Sigma B'
 
-    def inducible_ecoli(self,bb, num):
-        bb['chasis'] = 'E.coli'
+    def inducible_ecoli(self, bb, num):
+        bb['chassis'] = 'E.coli'
         bb['regulation'] = 'Inducible'
         if num == 0:
             bb['sigma_factor'] = 'Sigma 70'
@@ -159,28 +174,28 @@ class PromoterSpider(scrapy.Spider):
         elif num == 3:
             bb['sigma_factor'] = 'Sigma 54'
 
-    def inducible_bsubtilis(self,bb, num):
-        bb['chasis'] = 'B. subtilis'
+    def inducible_bsubtilis(self, bb, num):
+        bb['chassis'] = 'B. subtilis'
         bb['regulation'] = 'Inducible'
         if num == 0:
             bb['sigma_factor'] = 'Sigma A'
         elif num == 1:
             bb['sigma_factor'] = 'Sigma B'
 
-    def inducible_miscprokaryote(self,bb, num):
-        bb['chasis'] = 'Misc. Prokaryote'
+    def inducible_miscprokaryote(self, bb, num):
+        bb['chassis'] = 'Misc. Prokaryote'
         bb['regulation'] = 'Inducible'
 
-    def inducible_yeast(self,bb, num):
-        bb['chasis'] = 'Yeast'
+    def inducible_yeast(self, bb, num):
+        bb['chassis'] = 'Yeast'
         bb['regulation'] = 'Inducible'
 
-    def inducible_misceukaryote(self,bb, num):
-        bb['chasis'] = 'Misc. Eukaryote'
+    def inducible_misceukaryote(self, bb, num):
+        bb['chassis'] = 'Misc. Eukaryote'
         bb['regulation'] = 'Inducible'
 
     def repressible_ecoli(self, bb, num):
-        bb['chasis'] = 'E.coli'
+        bb['chassis'] = 'E.coli'
         bb['regulation'] = 'Repressible'
 
         if num == 0:
@@ -192,19 +207,19 @@ class PromoterSpider(scrapy.Spider):
         elif num == 3:
             bb['sigma_factor'] = 'Sigma 54'
 
-    def repressible_bsubtilis(self,bb, num):
-        bb['chasis'] = 'B. subtilis'
+    def repressible_bsubtilis(self, bb, num):
+        bb['chassis'] = 'B. subtilis'
         bb['regulation'] = 'Repressible'
         bb['sigma_factor'] = 'Sigma Alpha'
 
-    def repressible_phageT7(self,bb, num):
-        bb['chasis'] = 'Bacteriophage T7'
+    def repressible_phageT7(self, bb, num):
+        bb['chassis'] = 'Bacteriophage T7'
         bb['regulation'] = 'Repressible'
 
-    def repressible_yeast(self,bb, num):
-        bb['chasis'] = 'Yeast'
+    def repressible_yeast(self, bb, num):
+        bb['chassis'] = 'Yeast'
         bb['regulation'] = 'Repressible'
 
-    def repressible_misceukaryote(self,bb, num):
-        bb['chasis'] = 'Misc. Eukaryote'
+    def repressible_misceukaryote(self, bb, num):
+        bb['chassis'] = 'Misc. Eukaryote'
         bb['regulation'] = 'Repressible'
